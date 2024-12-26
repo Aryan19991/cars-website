@@ -1,0 +1,106 @@
+/* Basic layout for the app */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /*Take full height of the page*/
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /*stack logo and title vertically*/
+  padding: 20px;
+  margin-top: 20px; /*Optional: Adds space between top of page and header*/
+}
+
+/*Styling for the logo*/
+.logo {
+  width: 100px; /*Adjust logo size*/
+  height: auto;
+  margin-bottom: 10px; /*Space between logo and title*/
+}
+
+
+
+/* itle styling*/
+.title {
+  font-size: 2rem; /*Adjust title size*/
+  font-weight: bold;
+  color: black; /*Customize the title color*/
+}
+
+
+
+/* Auth buttons container */
+.auth-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+  gap: 10px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10;
+  right: 10;
+}
+
+
+
+/* Styles for Login and Sign Up buttons */
+.auth-button {
+  padding: 10px 20px;
+  background-color: #4ca0af;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #454ca0;
+}
+
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.image-grid img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-link {
+  display: block;
+  text-decoration: none; /* Remove underline */
+}
+
+.image-link:hover .image-name {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the background on hover */
+}
+
+.image-name {
+  position: above;
+  top: 10x;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.82);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  
+}
